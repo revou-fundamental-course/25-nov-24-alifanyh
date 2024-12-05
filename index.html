@@ -1,18 +1,28 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kalkulator BMI</title>
-    <link rel="shortcut icon" href="assets\calculator.png">
+    
+    <!-- Ini Link untuk External CSS  -->
     <link rel="stylesheet" href="css\styles.css">
 
+    <!-- Menampilkan icon pada Tab Browser  -->
+    <link rel="shortcut icon" href="assets\calculator.png">
+
+    <!-- Menampilkan Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&
+    family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;
+    0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <!-- Judul Website -->
     <header class="main-header">
-        <h1>Kalkulator BMI</h1>
+        <h1>Kalkulator BMI (Body Mass Index)</h1>
     </header>
 
     <!-- Konten Website -->
@@ -22,11 +32,24 @@
         <section class="main-section">
             <!-- Main Article -->
         <article>
-            <p>Lorem ipsum dolor sit amet consectetur ...</p>
+            <p>Berat badan ideal adalah impian semua orang. Tidak hanya memiliki bentuk tubuh yang menunjang 
+                penampilan, berat badan ideal juga menandakan kondisi tubuh yang sehat. Bagaimana denganmu?
+                Yuk, hitung sekarang di kalkulator BMI! 
+            </p>
         </article>
 
         <!-- Main Form -->
         <form>
+            <div class="form-item">
+                <label for="jenis-kelamin-input">
+                    Jenis Kelamin
+                </label>
+                <div class="radio-group-gender" id="jenis-kelamin-input">
+                    <label><input type="radio" name="jenis-kelamin-input" value="Pria" required> Pria</label>
+                    <label><input type="radio" name="jenis-kelamin-input" value="Wanita" required> Wanita</label>
+                </div>
+            </div>
+
             <div class="form-item">
                 <label for="berat-badan-input">
                     Berat Badan (kg):
@@ -49,8 +72,8 @@
             </div>
 
             <div class="form-button-container">
-                <button type="button" class="bg-cadet-blue color-antique-white" onclick="validateForm();">Hitung BMI</button>
-                <button class="bg-alice-blue">Reset</button>
+                <button type="button" class="bg-peru color-antique-white" onclick="validateForm();">Hitung BMI</button>
+                <button class="bg-snow">Reset</button>
             </div>
         </form>
 
@@ -60,7 +83,12 @@
                 <h3>Keunggulan Fitur</h3>
             </header>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, tempore?</p>
+        <!-- Ordered list pada keunggulan fitur     -->
+            <ol type="1">
+                <li>Menghitung berat badan</li>
+                <li>Menentukan kategori berat badan ideal atau tidak</li>
+                <li>Mempersiapkan program penurunan berat badan</li>
+            </ol>
         </article>
         </section>
 
@@ -68,22 +96,29 @@
          <section class="main-section">
             <div>
                 <header>
-                    <h2>Hasil</h2>
+                    <h2 class="header-form-hasil">Form Hasil Perhitungan BMI</h2>
                 </header>
 
-                <p>Berat Badan Lebih</p>
-
-                <div id="result-calculation">0</div>
-
-                <p id="info-result">Anda memiliki berat badan</p>
+                <div class="form-result">
+                    <p>Hasil Perhitungan Anda</p>
+                    <div id="result-calculation">0</div>
+                    <p>Anda Belum Melakukan Input Pada Form Perhitungan</p>
+                    <button class="bg-dark text-white"><i class="fa-solid fa-download"></i> Download Hasil BMI</button>
+                </div>
+                <!-- <p id="info-result">Anda memiliki berat badan</p> -->
             </div>
 
             <!-- Third Article -->
             <article>
-                <p>Lorem ipsum dolor sit amet consectetur ...</p>
-            </article>
-         </section>
+                <header class="info-catatan">
+                    <h3><i class="fa-solid fa-paperclip"></i> Catatan</h3>
+                </header>
 
+                <div class="info-penjelasan">
+                    <p>Berikut ini penjelasan singkat mengenai hasil perhitungan Anda!</p>
+                </div>
+             </article>
+         </section>
     </main>
 
     <!-- Footer Website -->
@@ -92,4 +127,5 @@
     </footer>
     <script src="js\script.js"></script>
 </body>
+
 </html>

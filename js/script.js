@@ -12,7 +12,7 @@ function validateForm() {
         let calculate = parseInt(inputBeratBadan) + parseInt(inputTinggiBadan);
         updateResult(calculate);
     } else {
-        alert('Inputan Anda Kosong! Mohon Cek Kembali');
+        alert('Inputan yang Anda Masukkan Kosong! Silakan Cek Kembali');
     }
 }
 

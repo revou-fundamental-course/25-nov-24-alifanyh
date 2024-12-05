@@ -1,69 +1,137 @@
 /* Ini File CSS */
 
+/* Mengatur tampilan halaman */
+body {
+  font-family: "Josefin Sans", sans-serif;
+  margin: 0;
+  background: #eef4fc;
+  line-height: 1.4;
+}
+
 .main-header {
   text-align: center;
+  background-color: darksalmon;
+  padding: 5px 10px;
 }
 
+/* Mengatur Konten Website secara horizontal  */
 main {
-  display: flex
-  ;
-      justify-content: space-evenly;
+  display: flex;
+  justify-content: space-evenly;
 }
 
+/* Mengatur ukuran dari Main Article pada Form */
 .main-section {
-  width: 36%;
+  width: 40%;
+  text-align: justify;
 }
 
-footer {
-  text-align: center;
-}
-
+/* Mengatur letak konten pada kotak form dan warna  */
 form {
   background-color: antiquewhite;
   padding: 16px;
-  border-radius: 8px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
+/* Mengatur letak item pada form  */
 .form-item {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 10px;
 }
 
+/* Mengatur tampilan input angka pada form berat badan, usia, tinggi badan */
 input[type=number] {
-  width: 40%;
-  padding: 12px 20px;
-  margin: 8px 0;
+  width: 60%;
+  padding: 10px 30px;
+  margin: 5px 0;
   display: inline-block;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 10px;
   box-sizing: border-box;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
+/* Mengatur tata letak tombol button  */
 .form-button-container {
-  margin-top: 32px;
+  margin-top: 20px;
 }
 
+/* Mengatur ukuran dan gaya radius pada button */
 button {
   border: 0;
   padding: 8px;
   border-radius: 4px;
+  cursor: pointer;
 }
 
-.bg-cadet-blue {
-  background-color: cadetblue;
+/* Mengatur warna pada tombol Hitung */
+.bg-peru {
+  background-color: peru;
 }
 
-.bg-alice-blue {
-  background-color: aliceblue;
+/* Mengatur warna pada tombol Reset */
+.bg-snow {
+  background-color: snow;
 }
 
+/* Mengatur warna teks pada tombol Hitung */
 .color-antique-white {
   color: antiquewhite;
 }
 
+/* Mengatur letak tulisan Form Hasil */
+.header-form-hasil {
+  text-align: center;
+}
+
+/* Menampilkan Form hasil perhitungan BMI */
+.form-result {
+  text-align: center;
+  background-color: #E2CDA8;
+  padding: 16px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+/* Menampilkan hasil perhitungan berupa angka. */
+#result-calculation {
+  font-size: 30px;
+}
+
+/* Memberikan space antara teks pada Catatan dengan Form Hasil di bagian atas */
+.info-catatan {
+  margin-top: 20px;
+}
+
+/* Membuat ukuran Border untuk isi konten yang terdapat pada Catatan dan memberikan warna */
+.info-penjelasan {
+  text-align: center;
+  background-color: #e1ecf1;
+  padding: 16px;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+/* Mengatur Teks menjadi rata kanan kiri */
+.info-penjelasan p {
+  text-align: justify;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* Mengatur ukuran dari Footer  */
+footer {
+  text-align: center;
+  background-color: darksalmon;
+  padding: 9px 10px;
+}
+
 /* Responsive Display */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 500px) {
   main {
     flex-direction: column;
   }
