@@ -78,6 +78,6 @@ function resetcalcbmi(event) {
     `;
 }
 
-// Menambahkan event listener ke tombol
+// Menambahkan event listener
 document.getElementById("hitung-hasil").addEventListener("click", hitungcalcbmi);
 document.getElementById("reset-hasil").addEventListener("click", resetcalcbmi);

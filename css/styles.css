@@ -40,6 +40,7 @@ form {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 10px;
+  flex-direction: column;
 }
 
 /* Mengatur tampilan input angka pada form berat badan, usia, tinggi badan */
@@ -57,6 +58,8 @@ input[type=number] {
 /* Mengatur tata letak tombol button  */
 .form-button-container {
   margin-top: 20px;
+  text-align: center;
+  padding: 16px;
 }
 
 /* Mengatur ukuran dan gaya radius pada button */
